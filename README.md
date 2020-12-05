@@ -10,4 +10,4 @@ or its parent directories. Root criterion: contains a file "DESCRIPTION">
 ```
 https://github.com/jtr13/cc20/runs/1496541945?check_suite_focus=true
 
-It worked once I moved `R/candela` to it's own repo: `jtr/candela`.
+It worked once I moved `Kitware/candela/R/candela` to its own repo: `jtr/candela`.
