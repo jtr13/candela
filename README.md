@@ -1,42 +1,12 @@
-# Candela R htmlwidgets package
+# This is a clone
 
-## Installation from GitHub
+Please see the official repo for this package: https://github.com/Kitware/candela/tree/master/R/candela
 
-From [RStudio](https://www.rstudio.com/):
-
-```
-install.packages('devtools')
-devtools::install_github('Kitware/candela', subdir='R/candela')
-library(candela)
-```
-
-## Usage
-
-At this point you can use the `candela` visualization as follows:
+This clone was created since I had trouble installing candela from a subdirectory with GitHub Actions: 
 
 ```
-candela('ScatterPlot', data=mtcars, x='mpg', y='wt', color='disp')
+Error: Error: <callr_remote_error: No root directory found in /tmp/Rtmp8zbHEH/file52aa6a60c11c/src/contrib/candela_0.2.0_51d7b2b94aa75a3ec94a804310ca85249143d61b.tar.gz-tree-tree or its parent directories. Root criterion: contains a file "DESCRIPTION">
 ```
+https://github.com/jtr13/cc20/runs/1496541945?check_suite_focus=true
 
-## Examples
-
-The following Candela htmlwidgets examples are published to
-[RPub](http://rpubs.com):
-
-* [Cars UpSet](http://rpubs.com/jeffbaumes/cars-upset)
-* [Cars OnSet](http://rpubs.com/jeffbaumes/cars-onset)
-* [Iris LineUp](http://rpubs.com/jeffbaumes/iris-lineup)
-
-## Development install
-
-If you are developing or testing changes to the Candela R integration
-from a cloned version of the Candela repository,
-navigate to the `candela/R/candela` directory in the Files tab in
-[RStudio](https://www.rstudio.com/) and select Set As Working Directory
-from the More menu. Then run:
-
-```
-install.packages('devtools')
-devtools::install()
-library(candela)
-```
+It worked once I moved `R/candela` to it's own repo: `jtr/candela`.
